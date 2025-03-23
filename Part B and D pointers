@@ -1,0 +1,22 @@
+B/
+Câu 1:
+*p3 = B, p3 = 0x5678
+*p3 = A, p3 = 0x1234
+*p1 = B, p1 = 0x1234
+
+Câu 2:
+Câu lệnh có thể gán cho i giá trị bằng 5 là *p = 5;
+
+Câu 3:
+Biến c là kiểu char, con trỏ p trỏ tới vùng nhớ chưa kiểu double
+Việc gán p = &c tức là gán địa chỉ kiểu char cho con trỏ trỏ tới kiểu double
+==> lỗi sai kiểu dữ liệu
+
+D/
+Câu 1: iii. *p = n;
+Câu 2: iii. p1 = p2;
+Câu 3: ii và iii
+Câu 4: ii
+Câu 5: iv
+Câu 6: iii
+Câu 7: iii. 2 2 3
