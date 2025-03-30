@@ -1,0 +1,35 @@
+Bài 3:
+thuật toán bubble sort:
+void bubbleSort(int arr[], int n) {
+    bool swapped;
+    for (int i = 0; i < n - 1; i++) {
+        swapped = false;
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                swap(arr[j], arr[j + 1]);
+                swapped = true;
+            }
+        }
+        if (!swapped) break;
+    }
+}
+
+Ưu điểm:
+- Dễ hiểu, dễ triển khai
+- Nhận diện mảng đã sắp xếp và tối ưu với best case O(n)
+Nhước điểm:
+- Chậm O(n^2)
+
+Bài 4:
+int binarySearch(int arr[], int left, int right, int target) {
+    if (left > right) return -1; // Không tìm thấy
+
+    int mid = left + (right - left) / 2;
+
+    if (arr[mid] == target)
+        return mid; // Tìm thấy, trả về vị trí
+    else if (arr[mid] > target)
+        return binarySearch(arr, left, mid - 1, target); // Tìm ở nửa trái
+    else
+        return binarySearch(arr, mid + 1, right, target); // Tìm ở nửa phải
+}
